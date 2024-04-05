@@ -1,0 +1,156 @@
+.landingPage-content {
+  margin-top: 60px;
+  width: 80%;
+  max-width: 1650px;
+}
+
+.landingPage {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(16, 18, 24, 255);
+}
+
+.landingPage-main-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.landingPage-img-div {
+  position: relative;
+  height: 90vh;
+}
+
+.landingPage-img-div h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: rgb(245, 245, 245);
+  font-size: 5vh;
+}
+
+.landingPage-img-div a {
+  position: absolute;
+  cursor: pointer;
+  top: 73%;
+  left: 46%;
+
+  background-color: rgba(42, 139, 233, 245);
+  font-size: 4.5vh;
+
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.5s;
+  transition: transform 0.5s;
+}
+
+.landingPage-img-div a:hover {
+  background-color: rgba(62, 149, 233, 255);
+  transform: scale(1.03);
+}
+
+.popularGames-div {
+  margin-top: 30px;
+}
+
+.popularGames-iner-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.popularGames-div h2 {
+  color: rgb(245, 245, 245);
+
+  margin-bottom: 30px;
+}
+
+.sideCards-div {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  color: rgb(245, 245, 245);
+  padding: 30px 0;
+}
+
+.sideCards-div h3 {
+  margin-bottom: 30px;
+}
+
+.olderGames {
+  flex: 1;
+  width: 100%;
+  margin-left: 5px;
+  padding: 5px;
+}
+
+.newerGames {
+  flex: 1;
+  width: 100%;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.game-ran-btn {
+  margin: 30px 0;
+  cursor: pointer;
+  color: rgb(245, 245, 245);
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgba(42, 139, 233, 245);
+  transition: background-color 0.5s;
+  transition: transform 0.5s;
+}
+
+.game-ran-btn:hover {
+  background-color: rgba(62, 149, 233, 255);
+  transform: scale(1.03);
+}
+
+.game-ran-div {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1750px) {
+  .popularGames-iner-div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .olderGames {
+    margin-left: 0px;
+  }
+  .newerGames {
+    margin-right: 0px;
+  }
+  .landingPage-main-img {
+    object-fit: cover;
+    padding: 3px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .popularGames-iner-div {
+    display: flex;
+    justify-content: center;
+  }
+  .landingPage-content {
+    width: 100%;
+  }
+  .landingPage-img-div a {
+    top: 70%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+  .landingPage-img-div h1 {
+    font-size: 4vh;
+  }
+}

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto", "poppins", sans-serif;
+}
+
+.game-card {
+  max-width: 400px;
+  padding: 3px;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s;
+  background-color: rgba(16, 18, 24, 255);
+}
+.game-card:hover {
+  filter: brightness(120%) saturate(120%);
+  cursor: pointer;
+  transform: scale(1.03);
+}
+.game-card h5 {
+  color: white;
+  padding: 3px;
+  font-size: 3.1vh;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  overflow: hidden;
+}
+.game-card p {
+  color: white;
+  padding: 3px;
+  font-size: 3vh;
+}
+
+.game-card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.game-image-div {
+  margin-bottom: 10px;
+  position: relative;
+}
+.star-div {
+  position: absolute;
+
+  top: 9%;
+  right: -2%;
+  transform: translate(-50%, -50%);
+  color: gold;
+}
+
+.star-div:hover {
+  cursor: pointer;
+  color: rgb(255, 233, 107);
+}
+.platform {
+  color: white;
+  background-color: rgba(27, 29, 34, 255);
+  min-width: 60px;
+  min-height: 40px;
+  width: 20%;
+  height: 5.5vh;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 1px;
+}
+
+.game-information {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+}
+.game-info-tp {
+  max-width: 65%;
+}
+@media screen and (max-width: 700px) {
+  .game-card {
+    transform: scale(1);
+  }
+  .game-card:hover {
+    transform: scale(1);
+  }
+}
+@media screen and(max-width: 300px) {
+  .game-card img {
+    object-fit: contain;
+  }
+}
